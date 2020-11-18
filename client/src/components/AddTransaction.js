@@ -11,12 +11,6 @@ export const AddTransaction = () => {
     e.preventDefault();
 
     const newTransaction = {
-      id:
-        Math.round(new Date().getTime() / 1000)
-          .toString(36)
-          .substr(2, 9) +
-        '_' +
-        Math.random().toString(36).substr(2, 9),
       text,
       amount: +amount,
     };
